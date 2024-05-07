@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    padding: 0 20px 10px 18px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+.login {
+    display: flex;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.section p {
+    max-width: 1600px;
+    margin-bottom: 20px;
+}
+/*
+#section1 {
+    background-image: url('../fotos/achtergrond1.jpg');
+    background-size: cover;
+}
+
+#section2 {
+    background-image: url('../fotos/achtergrond2.jpg');
+    background-size: cover;
+}
+
+#section3 {
+    background-image: url('../fotos/achtergrond3.jpg');
+    background-size: cover;
+}
+*/
+form {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+form label {
+    
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.message, 
+.phone{
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"]{
+    width: calc(100% - 20px);
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links,
+.contact-info {
+    flex-basis: 45%;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info p strong {
+    color: #fff;
+}
