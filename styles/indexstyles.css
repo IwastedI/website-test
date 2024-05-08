@@ -63,6 +63,9 @@ nav ul li a:hover {
 }
 
 .content {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt ervoor dat de divs op een nieuwe rij gaan als er niet genoeg ruimte is */
+    gap: 20px; /* Ruimte tussen de divs */
     margin: 0 auto;
     text-align: center;
 }
@@ -76,12 +79,34 @@ nav ul li a:hover {
 
 .section h2 {
     margin-top: 0;
+    align-self: center;
 }
 
 .section p {
     max-width: 1600px;
     margin-bottom: 20px;
 }
+
+.paragraph1 {
+    width: 100%;
+}
+
+.paragraph {
+    flex: 1 1 300px; /* Geef de divs een flexibele breedte */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph h4 {
+    margin-top: 0; /* Ruimte boven elke titel */
+}
+
+.paragraph p {
+    margin-bottom: 0; /* Geen ruimte onder elke paragraaf */
+}
+
 /*
 #section1 {
     background-image: url('../fotos/achtergrond1.jpg');
