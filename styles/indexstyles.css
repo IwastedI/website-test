@@ -57,7 +57,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     min-height: 600px;
-    width: 100%;
+    width: 100% -40px;
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -83,7 +83,7 @@ nav ul li a:hover {
 }
 
 .section p {
-    max-width: 1600px;
+    max-width: 1500px;
     margin-bottom: 20px;
 }
 
@@ -123,8 +123,24 @@ nav ul li a:hover {
     background-size: cover;
 }
 */
+.content2{
+    display: flex;
+    flex-wrap: wrap; /* Zorgt ervoor dat de divs op een nieuwe rij gaan als er niet genoeg ruimte is */
+    gap: 20px; /* Ruimte tussen de divs */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section .content2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
 form {
-    min-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -158,7 +174,7 @@ form textarea{
 }
 
 form input[type="submit"] {
-    width: 100%;
+    width: 100% ;
     padding: 10px;
     background-color: #333;
     color: #fff;
