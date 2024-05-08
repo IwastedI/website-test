@@ -60,6 +60,7 @@ nav ul li a:hover {
     width: 100% -40px;
     background-color: #f0f0f0;
     padding: 20px;
+    padding-bottom: 5%;
 }
 
 .content {
