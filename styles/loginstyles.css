@@ -14,6 +14,10 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -46,11 +50,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #ccc;
 }
-
+/*
 .login {
     display: flex;
 }
-
 .section {
     padding: 40px 0;
 }
@@ -64,7 +67,7 @@ nav ul li a:hover {
 
 .login-container,
 .register-container {
-    flex: 0 0 calc(50% - 20px); /* Neem de helft van de beschikbare ruimte in, met wat ruimte ertussen */
+    flex: 0 0 calc(50% - 20px); /* Neem de helft van de beschikbare ruimte in, met wat ruimte ertussen *//*
     max-width: 400px;
     padding: 20px;
     background-color: #fff;
@@ -73,11 +76,11 @@ nav ul li a:hover {
 }
 
 .login-container {
-    margin-right:10%; /* Voeg rechtermarge toe aan de login-container */
+    margin-right:10%; /* Voeg rechtermarge toe aan de login-container *//*
 }
 
 .register-container {
-    margin-left: 10%; /* Voeg linkermarge toe aan de register-container */
+    margin-left: 10%; /* Voeg linkermarge toe aan de register-container *//*
 }
 
 .container2 {
@@ -90,6 +93,45 @@ nav ul li a:hover {
 h2 {
     text-align: center;
 }
+*/
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding-top: 150px;
+    padding-bottom: 200px;
+    min-height: 100%;
+    max-width: 80%;
+    padding-left: 10%;
+}
+
+.login-container, .register-container {
+    flex: 1; /* Neemt evenveel ruimte in beslag */
+    padding: 20px;
+    margin: 10px; /* Voeg wat ruimte tussen de containers toe */
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2, .register-container h2 {
+    text-align: center;
+}
+
+/* Mediaquery voor schermen kleiner dan 768px */
+@media screen and (max-width: 768px) {
+    .container2 {
+        flex-direction: column; /* Zet de richting van de flexcontainer om naar kolom */
+        align-items: stretch; /* Rek de items uit om de volledige breedte in te nemen */
+    }
+
+    .login-container, .register-container {
+        width: 100%; /* Neem de volledige breedte van de container in */
+        margin: 10px 0; /* Voeg wat ruimte boven en onder de containers toe */
+    }
+}
+
 
 form {
     display: flex;
@@ -128,6 +170,10 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 30px 0;
+    bottom: 0;
+    position: fixed;
+    left:0;
+    width: 100%;
 }
 
 footer .container {

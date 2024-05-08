@@ -14,6 +14,10 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -50,17 +54,20 @@ nav ul li a:hover {
 .login {
     display: flex;
 }
+:first-child .section1{
+    padding-top: 150px;
+}
 
 .section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 600px;
     width: 100% -40px;
     background-color: #f0f0f0;
     padding: 20px;
-    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .content {
@@ -81,6 +88,7 @@ nav ul li a:hover {
 .section h2 {
     margin-top: 0;
     align-self: center;
+    
 }
 
 .section p {
@@ -90,6 +98,24 @@ nav ul li a:hover {
 
 .paragraph1 {
     width: 100%;
+    display: flex;
+    flex-direction: column; /* Zet de richting van de flexcontainer om naar kolom */
+    align-items: center;
+    color: #f0f0f0;
+}
+.paragraph2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Zet de richting van de flexcontainer om naar kolom */
+    align-items: center;
+}
+
+.paragraph1 p{
+    margin-bottom: 0;
+}
+
+.paragraph1 h2 {
+    margin-bottom: 0; /* Voorkom extra ruimte onder de titel */
 }
 
 .paragraph {
@@ -108,22 +134,28 @@ nav ul li a:hover {
     margin-bottom: 0; /* Geen ruimte onder elke paragraaf */
 }
 
-/*
-#section1 {
-    background-image: url('../fotos/achtergrond1.jpg');
-    background-size: cover;
-}
 
-#section2 {
+
+
+.content1 {
     background-image: url('../fotos/achtergrond2.jpg');
     background-size: cover;
 }
 
-#section3 {
-    background-image: url('../fotos/achtergrond3.jpg');
+.content3 {
+    background-image: url('../fotos/achtergrond2.jpg');
     background-size: cover;
 }
-*/
+
+.content4 {
+    background-image: url('../fotos/achtergrond2.jpg');
+    background-size: cover;
+}
+
+
+
+
+
 .content2{
     display: flex;
     flex-wrap: wrap; /* Zorgt ervoor dat de divs op een nieuwe rij gaan als er niet genoeg ruimte is */
@@ -137,19 +169,20 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 50%;
 }
 
 form {
     max-width: 1200px;
+    width: 70%; 
     margin: 0 auto;
 }
 
 form label {
-    
     margin-bottom: 10px;
     font-weight: bold;
 }
+
 .message, 
 .phone{
     display: block;
@@ -159,7 +192,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="tel"]{
     width: calc(100% - 20px);
-    max-width: 300px;
+    max-width: 250px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -182,6 +215,7 @@ form input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    max-width: 500px;
 }
 
 form input[type="submit"]:hover {
