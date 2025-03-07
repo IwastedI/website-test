@@ -1,0 +1,190 @@
+
+/* Algemene Stijlen */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+p {
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu ul li a {
+    font-weight: 500;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: white;
+}
+
+.nav-menu ul li a.active {
+    color: white;
+    font-weight: 600;
+}
+
+/* Services Sectie */
+.services-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Donkerblauw */
+    margin-bottom: 20px;
+    font-weight: 600; /* Vetgedrukte titel */
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #007BFF; /* Lichtblauw als accentkleur */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    color: #2c3e50; /* Donkerblauw */
+    margin-bottom: 15px;
+    font-weight: 600; /* Vetgedrukte titel */
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Betere leesbaarheid */
+}
+
+.service-card ul {
+    list-style-type: none; /* Geen opsommingstekens */
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.service-card ul li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif; /* Modern lettertype */
+    font-weight: 400; /* Normale dikte */
+    line-height: 1.6; /* Betere leesbaarheid */
+}
+
+.service-card ul li::before {
+    content: "•";
+    color: #007BFF; /* Lichtblauw als accentkleur voor opsommingstekens */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+.service-card strong {
+    color: #007BFF; /* Lichtblauw als accentkleur voor vetgedrukte tekst */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF; /* Lichtblauw */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Donkerder blauw bij hover */
+    transform: translateY(-3px);
+}
+
+/* Responsief Ontwerp */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}

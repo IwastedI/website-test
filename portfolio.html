@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DNM IT Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/port2.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="DNM IT Solutions Logo">
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="over.html">Over Ons</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="portfolio-section">
+            <h1>Ons Portfolio</h1>
+            <p class="section-description">Hieronder vindt u enkele voorbeelden van projecten die wij hebben afgerond. Deze kunnen dienen als inspiratie voor uw eigen projecten of als demonstratie van onze mogelijkheden.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/website1.jpg" alt="Moderne Bedrijfswebsite" onclick="myFunction(this);">
+                    <div class="portfolio-info">
+                        <h3>Moderne Bedrijfswebsite</h3>
+                        <p>Een responsive website voor een lokaal bedrijf, ontworpen met een focus op gebruiksvriendelijkheid en moderne designprincipes.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/website2.jpg" alt="E-commerce Platform" onclick="myFunction(this);">
+                    <div class="portfolio-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>Een volledig functionerende webshop met productbeheer, betalingsintegratie en klantenservice-opties.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/website3.jpg" alt="Persoonlijke Blog" onclick="myFunction(this);">
+                    <div class="portfolio-info">
+                        <h3>Persoonlijke Blog</h3>
+                        <p>Een persoonlijke blog met een gebruiksvriendelijk CMS, zodat de eigenaar gemakkelijk inhoud kan toevoegen en beheren.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="images/website4.jpg" alt="Landingspagina" onclick="myFunction(this);">
+                    <div class="portfolio-info">
+                        <h3>Landingspagina</h3>
+                        <p>Een eenvoudige maar effectieve landingspagina voor een marketingcampagne, ontworpen om conversies te maximaliseren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uitgebreide afbeelding en tekst -->
+            <div class="expanded-container">
+                <img id="expandedImg" style="width:60%;">
+                <h2 id="imgtext"></h2>
+            </div>
+        </section>
+
+        <section class="portfolio-about">
+            <h2>Over Ons Portfolio</h2>
+            <p>
+                Bij DNM IT Solutions geloven we in het tonen van onze expertise door middel van onze projecten. Ons portfolio is een verzameling van onze meest recente werken, waaronder webdevelopment, IT-ondersteuning en webshops. Elk project is zorgvuldig uitgevoerd met aandacht voor detail en innovatie. We zijn trots op wat we doen en delen graag onze successen met u.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 DNM IT Solutions. Alle rechten voorbehouden.</p>
+            <p><a href="#">Privacybeleid</a> | <a href="#">Algemene voorwaarden</a></p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/port.js"></script>
+</body>
+</html>
