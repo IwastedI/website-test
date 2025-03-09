@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 170px;
 }
 
 .nav-menu ul {
@@ -51,7 +51,7 @@ header {
 
 .nav-menu ul li a {
     font-weight: 500;
-    color: #2c3e50;
+    color: #113940;
     transition: color 0.3s ease;
 }
 

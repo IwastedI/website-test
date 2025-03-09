@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 170px;
 }
 
 .nav-menu ul {
@@ -51,7 +51,7 @@ header {
 
 .nav-menu ul li a {
     font-weight: 500;
-    color: #2c3e50;
+    color: #113940;
     transition: color 0.3s ease;
 }
 
@@ -120,7 +120,7 @@ header {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #007BFF;
+    border-color: #54BBC8;
     outline: none;
 }
 
@@ -131,7 +131,7 @@ header {
 
 /* Knop Stijlen */
 .cta-primary {
-    background-color: #007BFF;
+    background-color: #54BBC8;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -143,7 +143,7 @@ header {
 }
 
 .cta-primary:hover {
-    background-color: #0056b3;
+    background-color: #24A7B8;
 }
 
 /* Responsief Ontwerp */

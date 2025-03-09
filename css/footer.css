@@ -1,6 +1,6 @@
 /* Footer Styling */
 footer {
-    background-color: #2c3e50;
+    background-color: #113940;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -23,14 +23,14 @@ footer p {
 }
 
 footer a {
-    color: #007BFF;
+    color: #f0f0f0;
     text-decoration: none;
     font-weight: 600; /* Vetgedrukte links */
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #0056b3;
+    color: #E0F2F5;
 }
 
 .social-media {
@@ -45,5 +45,5 @@ footer a:hover {
 }
 
 .social-media a:hover {
-    color: #007BFF;
+    color: #E0F2F5;
 }

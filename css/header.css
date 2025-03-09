@@ -19,7 +19,7 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 170px;
     transition: transform 0.3s ease;
 }
 
@@ -37,19 +37,19 @@ header {
 
 .nav-menu ul li a {
     font-weight: 500;
-    color: #2c3e50;
+    color: #113940;
     padding: 8px 12px;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .nav-menu ul li a:hover {
-    background-color: #007BFF;
+    background-color: #24A7B8;
     color: white;
 }
 
 .nav-menu ul li a.active {
-    background-color: #007BFF;
+    background-color: #24A7B8;
     color: white;
 }
 
